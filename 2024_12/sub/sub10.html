@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>마음을 읽다 | 장소로 알아보는 나의 내적 욕망</title>
+    <meta name="robots" content="index,follow" />
+    <meta
+      name="description"
+      content="마음을 읽다 | 장소로 알아보는 나의 내적 욕망
+"
+    />
+    <meta
+      name="keywords"
+      content="마음을 읽다 | 장소로 알아보는 나의 내적 욕망
+"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="마음을 읽다 | 장소로 알아보는 나의 내적 욕망
+"
+    />
+    <meta
+      property="og:description"
+      content="마음을 읽다 | 장소로 알아보는 나의 내적 욕망
+"
+    />
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"
+    ></script>
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+    ></script>
+
+    <script defer src="../src/sub.js"></script>
+    <script defer src="../src/testResult.js"></script>
+
+    <link rel="stylesheet" href="../css/sub.css" />
+  </head>
+  <body>
+    <div class="result-popup-container">
+      <div class="popup-wrap">
+        <div class="popup-image">
+          <img src="../img/sub10/sub10-3.png" alt="숲" />
+        </div>
+        <div class="popup-desc">
+          <h3 class="desc-title">숲</h3>
+          <p>
+            숲을 선택한 경우, 당신은 평온과 자연의 영감을 추구하는 성향을 가지고
+            있을 가능성이 있습니 다. 숲은 우리에게 안정감과 평화로움을 전달하 는
+            곳으로, 당신은 자연과 조화로운 환경에서 내 면의 평화와 조화를 찾고자
+            합니다. 숲은 당신에 게 안정적인 에너지와 창의성을 부여하며, 여유
+            로운 시간을 보내며 자신과 대화하고 회복할 수 있는 공간을 제공합니다.
+          </p>
+        </div>
+        <div class="popup-close">
+          <svg
+            data-slot="icon"
+            fill="none"
+            stroke-width="1.5"
+            stroke="white"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18 18 6M6 6l12 12"
+            ></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <header id="header"></header>
+
+    <div
+      class="header-wrap pannel"
+      style="background-image: url(../img/sub10/bg.png)"
+    >
+      <h3 class="column">마음을 읽다</h3>
+
+      <h1 class="content_title">장소로 알아보는 나의 내적 욕망</h1>
+    </div>
+    <div class="content-wrap pannel">
+      <div class="lead">
+        <p>
+          사람마다 성격과 성향은 매우 다양하며, 이를 이해하는 것은 우리 자신과
+          다른 사람들과의 관계를 개선하는 데 도움이 될 수 있다. 간단한
+          심리테스트로 내가 선호하는 환경과 내 안에 숨겨진 욕망에 대해 알아보자.
+        </p>
+      </div>
+      <div class="article-wrap">
+        <div class="content_image">
+          <img src="../img/sub10/sub10-1.png" alt="심리테스트" />
+        </div>
+        <div class="result-wrap">
+          <div class="content_image icon-result" data-index="0">
+            <div class="result-name">
+              <h1>산꼭대기</h1>
+              <div class="result-name-bg"></div>
+            </div>
+            <img src="../img/sub10/sub10-2.png" alt="산꼭대기" />
+          </div>
+          <div class="content_image icon-result" data-index="1">
+            <div class="result-name">
+              <h1>숲</h1>
+              <div class="result-name-bg"></div>
+            </div>
+            <img src="../img/sub10/sub10-3.png" alt="숲" />
+          </div>
+          <div class="content_image icon-result" data-index="2">
+            <div class="result-name">
+              <h1>해변</h1>
+              <div class="result-name-bg"></div>
+            </div>
+            <img src="../img/sub10/sub10-4.png" alt="해변" />
+          </div>
+        </div>
+
+        <div id="button_wrap">
+          <!-- prev button -->
+          <div id="btn_prev" class="content_button">
+            <a href="../sub/sub20.html">
+              <svg
+                dataSlot="icon"
+                fill="none"
+                strokeWidth="{1.5}"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M15.75 19.5 8.25 12l7.5-7.5"
+                />
+              </svg>
+              <span>PREV</span>
+            </a>
+          </div>
+          <!-- prev button -->
+          <!-- top button -->
+          <div id="btn_top" class="content_button">
+            <a href="#board">
+              <svg
+                dataSlot="icon"
+                fill="none"
+                strokeWidth="{1.5}"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="m4.5 15.75 7.5-7.5 7.5 7.5"
+                />
+              </svg>
+              <span>TOP</span>
+            </a>
+          </div>
+          <!-- top button -->
+          <!-- next button -->
+          <div id="btn_next" class="content_button">
+            <a href="../sub/sub2.html">
+              <span>NEXT</span>
+              <svg
+                dataSlot="icon"
+                fill="none"
+                strokeWidth="{1.5}"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </a>
+          </div>
+          <!-- next button -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

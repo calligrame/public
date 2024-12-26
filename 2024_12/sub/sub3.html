@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>나에게 빠지다 | 내 몸을 알아차리는 연습 ‘바디 스캔 명상’</title>
+    <meta name="robots" content="index,follow" />
+    <meta
+      name="description"
+      content="나에게 빠지다 | 내 몸을 알아차리는 연습 ‘바디 스캔 명상’
+"
+    />
+    <meta
+      name="keywords"
+      content="나에게 빠지다 | 내 몸을 알아차리는 연습 ‘바디 스캔 명상’
+"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="나에게 빠지다 | 내 몸을 알아차리는 연습 ‘바디 스캔 명상’
+"
+    />
+    <meta
+      property="og:description"
+      content="나에게 빠지다 | 내 몸을 알아차리는 연습 ‘바디 스캔 명상’
+"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"
+    ></script>
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+    ></script>
+    <script defer src="../src/sub.js"></script>
+    <link rel="stylesheet" href="../css/sub.css" />
+    <style>
+      .image-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .image-title img {
+        width: 35%;
+        margin-bottom: 15px;
+      }
+      .bodyscan-introduce {
+        list-style-type: decimal;
+        margin-left: 20px;
+      }
+      li::marker {
+        color: var(--color-theme);
+        font-weight: 700;
+        font-size: 1.5rem;
+      }
+      .introduce-left > li:nth-child(1)::marker {
+        content: "❶ ";
+      }
+      .introduce-left > li:nth-child(2)::marker {
+        content: "❷ ";
+      }
+      .introduce-left > li:nth-child(3)::marker {
+        content: "❸ ";
+      }
+      .introduce-right > li:nth-child(1)::marker {
+        content: "❹ ";
+      }
+      .introduce-right > li:nth-child(2)::marker {
+        content: "❺ ";
+      }
+      .introduce-right > li:nth-child(3)::marker {
+        content: "❻ ";
+      }
+      @media (max-width: 768px) {
+        .bodyscan-introduce {
+          font-size: 0.8rem;
+          line-height: 1.5rem;
+        }
+        li::marker {
+          font-size: 1.2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header"></header>
+
+    <div
+      class="header-wrap pannel"
+      style="background-image: url(../img/sub3/bg.jpg)"
+    >
+      <h3 class="column">나에게 빠지다</h3>
+      <h1 class="content_title">
+        내 몸을 알아차리는 연습<br />‘바디 스캔 명상’
+      </h1>
+      <p class="content_writer">
+        <b>글.</b> 편집실 &nbsp; &nbsp; <b>참고.</b> KAIST 명상과학연구소 외
+        다수
+      </p>
+    </div>
+    <div class="content-wrap pannel">
+      <div class="lead">
+        <p>
+          매일 나를 짓누르는 스트레스와 불안감으로부터 자유로워지고 <br />
+          내 마음이 평온해지기를 바라는 건 모든 현대인들의 소망이 아닐까.
+          <br /><br />
+          나의 몸과 마음의 감각을 깊이 알아차릴 수 있는 ‘바디 스캔(Body Scan)’
+          명상으로 <br />
+          내 몸의 이야기에 귀를 기울여보자.
+        </p>
+      </div>
+      <div class="article-wrap">
+        <div class="sub_title">
+          <h2>몸의 긴장을 이완하여 스트레스를 해소한다</h2>
+        </div>
+        <p>
+          정신적·신체적 편안함을 찾고자 하는 현대인들 사이에서 인기를 끌고 있는
+          바디 스캔 명상법은 현재 순간에 온전히 마음을 집중하고 몸의 감각을
+          경험하는 명상 기법이다.
+          <br /><br />
+          몸과 마음의 연결을 강화하고 내면의 상태를 인식하여 스트레스 해소와
+          마음의 안정을 도와주는 이 기법은 신체의 각 부분을 순차적으로 마치
+          스캔하듯이 마음의 눈으로 관찰하면서 긴장을 풀고 자아 감각을 증진시키는
+          것에 초점을 맞춘다.
+        </p>
+        <div class="sub_title">
+          <h2>나를 깊이 관찰하여 순간에 집중한다</h2>
+        </div>
+        <p>
+          우리는 우리 몸의 세포, 근육, 장기 및 기관의 존재를 미처 인식하지 못할
+          때가 많다. 바디 스캔 명상은 이런 부분들을 인식하고 각 부위에서의
+          느낌을 관찰하여 현재 순간에 집중할 수 있도록 도와준다.
+          <br /><br />
+          세계적인 IT 기업 구글 임직원 대상으로 2007년부터 마음챙김 명상을
+          도입한 차드 멩탄은 그의 저서 &lt;너의 내면을 검색하라&gt;에서 바디
+          스캔 명상의 뛰어난 효과를 강조하기도 했다. 실제로 바디 스캔 명상법은
+          세계 각국의 연구 결과를 통해 뇌파 조절, 인지 향상, 수면 개선 등 그
+          다양한 효과가 의·과학적으로도 증명되고 있다.
+        </p>
+
+        <div class="dot-frame">
+          <div class="sub_title image-title">
+            <img src="../img/sub3/sub3-1.png" alt="" />
+            <h2>바디 스캔 명상법의 효과</h2>
+          </div>
+
+          <p>
+            <b class="text-color-theme">불편했던 신체 부위를 마사지 하는 효과</b
+            ><br />
+            바디 스캔 도중 통증이나 불편한 느낌이 드는 부위에 주의를 집중하고
+            호흡을 몇 번 반복하다보면 그 부위가 이완되거나 따뜻해짐을 느낄 수
+            있다. 마음을 보내는 쪽으로 기와 혈이 흘러 치유를 가져다주는 일종의
+            정신적 마사지로서 여러 과학적 결과로도 입증되고 있다.
+            <br /><br />
+            <b class="text-color-theme">내면에 숨겨진 직관의 힘 강화</b><br />
+            주기적으로 바디 스캔 명상을 통해 나의 몸에 주의를 기울이면 감정에
+            대한 고해상도 인식이 가능해진다. 이러한 고해상도 인식 능력은
+            순간순간 최적의 선택을 할 수 있도록 도와주며, 우리의 내면에 숨겨져
+            있는 직관(insight)의 힘도 강화시킬 수 있다.
+            <br /><br />
+            <b class="text-color-theme">공감 능력 발달</b><br />
+            바디 스캔을 통해 몸과 마음이 조화를 이루게 되면 스스로의 감정
+            인식뿐만 아니라 타인에 대한 공감 능력도 발달한다. 자신의 몸을 통한
+            미세한 감각과 감정에 집중하면서 타인의 미세한 감정 흐름까지 포착하게
+            되는 것이다.
+          </p>
+          <!-- line -->
+          <div class="line mb80"></div>
+          <!-- line -->
+          <div class="sub_title image-title">
+            <img src="../img/sub3/sub3-2.png" alt="" />
+            <h2>일상에서 연습해보는 바디 스캔 명상법</h2>
+          </div>
+
+          <p>
+            바디 스캔은 우리 몸 곳곳에 집중하며 지금 이 순간 느껴지는 몸의
+            감각을 관찰하는 명상법이다. 마음챙김 명상의 창시자인 미국의 명상
+            전문가 존 카밧진 박사의 8주 마음챙김 명상 프로그램 ‘MBSR’에서는 바디
+            스캔 명상에 45분 정도의 시간이 소요되지만, 처음 해보는 사람이라면
+            약식으로 5분에서 10분 정도만 시도해 보는 것도 좋다. 편안하게 누워
+            몸의 각 부분에 정신을 집중하며 몸 전체를 차례차례 스캔하듯이 마음의
+            눈으로 관찰해보자.
+          </p>
+          <div class="content_image">
+            <img src="../img/sub3/sub3-3.png" alt="바디스캔 방법법" />
+          </div>
+
+          <div class="colored-box">
+            <div class="half-text-box mb0">
+              <ol class="bodyscan-introduce introduce-left">
+                <li>
+                  방바닥이나 침대에 등을 대고 눕는다. <br />발은 어깨 넓이
+                  정도로 편하게 벌리고 손도 옆구리와 조금 간격이 있는 상태로
+                  편안히 둔다.
+                </li>
+                <li>편안히 누운 자세로 눈을 감고 천천히 깊게 호흡한다.</li>
+                <li>
+                  들이마시는 호흡이 정수리부터 들어온다고 생각하며 감각을
+                  느껴본다.
+                  <br />이마부터 시작해서 긴장을 풀며 눈, 미간, 코, 입, 턱
+                  차례로 주의를 집중한다. <br />
+                  각 신체 부위에 어떤 감각이 느껴지는지 인지한다.
+                </li>
+              </ol>
+              <ol class="bodyscan-introduce introduce-right">
+                <li>
+                  스캔 도중 통증이나 불편한 느낌이 든다면 잠시 그 부위에 주의를
+                  집중하고 호흡을 몇 번 반복한다.
+                </li>
+                <li>
+                  목, 등과 어깨, 가슴, 배 순서로 내려오며 편안하게 호흡한다.
+                </li>
+                <li>
+                  허벅지, 다리, 발등, 발바닥, 발가락까지 의식을 집중하며 몸의
+                  감각을 느낀다.
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div id="button_wrap">
+          <!-- prev button -->
+          <div id="btn_prev" class="content_button">
+            <a href="../sub/sub20.html">
+              <svg
+                dataSlot="icon"
+                fill="none"
+                strokeWidth="{1.5}"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M15.75 19.5 8.25 12l7.5-7.5"
+                />
+              </svg>
+              <span>PREV</span>
+            </a>
+          </div>
+          <!-- prev button -->
+          <!-- top button -->
+          <div id="btn_top" class="content_button">
+            <a href="#board">
+              <svg
+                dataSlot="icon"
+                fill="none"
+                strokeWidth="{1.5}"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="m4.5 15.75 7.5-7.5 7.5 7.5"
+                />
+              </svg>
+              <span>TOP</span>
+            </a>
+          </div>
+          <!-- top button -->
+          <!-- next button -->
+          <div id="btn_next" class="content_button">
+            <a href="../sub/sub2.html">
+              <span>NEXT</span>
+              <svg
+                dataSlot="icon"
+                fill="none"
+                strokeWidth="{1.5}"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </a>
+          </div>
+          <!-- next button -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

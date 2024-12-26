@@ -1,0 +1,306 @@
+@import url(../css/common.css);
+@import url(../css/nav.css);
+
+html {
+  overflow-y: scroll;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+}
+body {
+  overflow-y: visible;
+  position: relative;
+  height: unset;
+}
+html,
+body {
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.container {
+  width: 400%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.firstContainer {
+  height: 100vh;
+  background-color: white;
+  background-image: url("/2024_12/img/common/klacc-title-img.png");
+  padding: 100px 0;
+  background-position: center left;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.panel {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.5em;
+  text-align: center;
+  color: white;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.lastContainer {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background: white;
+}
+
+.main-title-grid {
+  padding-left: 100px;
+  padding-right: 100px;
+  height: 100%;
+  display: grid;
+  margin: 0 auto;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.title-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+}
+
+.vol-num {
+  width: 150px;
+}
+.magazine-title {
+  width: 300px;
+  margin-bottom: 40px;
+}
+.main-text {
+  text-align: right;
+  color: var(--text-color-default);
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+}
+
+.main-content-bg {
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+.main-content-bg1 {
+  background-image: url(/2024_12/img/thumb-1.jpg);
+}
+
+.main-content-bg2 {
+  background-image: url(/2024_12/img/thumb-2.jpg);
+}
+.main-content-bg3 {
+  background-image: url(/2024_12/img/thumb-3.jpg);
+}
+
+.main-content-bg4 {
+  background-image: url(/2024_12/img/thumb-4.jpg);
+}
+#footer_wrap {
+  width: 100%;
+  background-color: #222222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 30px;
+  gap: 20px;
+}
+.footer-info {
+  color: white;
+  line-height: 40px;
+}
+.progress-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 15px;
+  border: none;
+  z-index: 99;
+  background: var(--color-theme);
+  transform-origin: left;
+}
+.content-title-wrap {
+  width: calc(100% - 200px);
+  text-align: right;
+  position: absolute;
+}
+.main-content-category {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+.main-content-title {
+  color: white;
+  font-size: 3.5rem;
+  line-height: 72px;
+  margin-bottom: 40px;
+}
+.content-button {
+  color: white;
+  border-radius: 50px;
+  border: 1px solid white;
+  padding: 20px 50px;
+  transition: all 0.3s ease-in-out;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.content-button:hover {
+  color: var(--text-color-default);
+  background-color: white;
+  cursor: pointer;
+}
+
+.articles-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-side {
+  width: 35%;
+  padding: 110px 100px 100px 100px;
+}
+.title-side h3 {
+  font-size: 5rem;
+  font-weight: 700;
+  color: var(--color-theme);
+}
+.articles-insight-container {
+  width: 100%;
+}
+.articles-list {
+  width: 68%;
+  /* padding-top: 110px; */
+}
+.articles-container {
+  padding-top: 100px;
+}
+
+.list-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* .articles-insight {
+  border-bottom: 1px solid #3a3a3a;
+}
+.articles-people {
+  border-bottom: 1px solid #3a3a3a;
+} */
+.article-item {
+  margin-bottom: 40px;
+}
+
+.article-item img {
+  box-shadow: 0px 10px 28px 7px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.item-cate {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.item-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.item-cate {
+  color: var(--color-theme);
+}
+.item-title {
+  color: #3a3a3a;
+}
+
+@media (max-width: 768px) {
+  .articles-section {
+    flex-direction: column;
+  }
+  .title-side,
+  .articles-list {
+    width: 100%;
+  }
+  .main-content-bg {
+    background-position: center left;
+  }
+  .firstContainer {
+    background-image: url(/2024_12/img/common/klacc-title-mob.png);
+    background-size: contain;
+    background-position-y: calc(100% - 100px);
+  }
+  .main-title-grid {
+    margin: unset;
+    padding-left: 0px;
+    padding-right: 40px;
+    grid-template-rows: 3fr 0fr;
+  }
+  .magazine-title {
+    width: 120px;
+    margin-bottom: 20px;
+  }
+  .vol-num {
+    width: 50px;
+  }
+  .main-text {
+    font-size: 0.7rem;
+    margin-bottom: 0;
+  }
+  .main-content-category {
+    font-size: 0.7rem;
+  }
+  .main-content-title {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+  .panel {
+    justify-content: end;
+  }
+  .content-title-wrap {
+    width: 100%;
+    padding-right: 40px;
+  }
+  .title-side h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .articles-container {
+    padding-top: 0;
+  }
+  .list-wrap {
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+  }
+  .article-item {
+    margin-bottom: 10px;
+  }
+  .item-cate {
+    font-size: 0.7rem;
+    margin-bottom: 0;
+  }
+  .item-title {
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+  }
+}
