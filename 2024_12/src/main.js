@@ -1,6 +1,6 @@
 $(document).ready(function () {
   // 헤더 로드
-  $("#header").load("/2024_12/header.html", function () {
+  $("#header").load("/public/2024_12/header.html", function () {
     document.getElementById("header").classList.add("fixed");
   });
   // 최상위 이동
