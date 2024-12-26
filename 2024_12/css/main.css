@@ -28,7 +28,7 @@ body {
 .firstContainer {
   height: 100vh;
   background-color: white;
-  background-image: url("/2024_12/img/common/klacc-title-img.png");
+  background-image: url("/public/2024_12/img/common/klacc-title-img.png");
   padding: 100px 0;
   background-position: center left;
   background-size: 70%;
@@ -95,18 +95,18 @@ body {
   height: 100%;
 }
 .main-content-bg1 {
-  background-image: url(/2024_12/img/thumb-1.jpg);
+  background-image: url(/public/2024_12/img/thumb-1.jpg);
 }
 
 .main-content-bg2 {
-  background-image: url(/2024_12/img/thumb-2.jpg);
+  background-image: url(/public/2024_12/img/thumb-2.jpg);
 }
 .main-content-bg3 {
-  background-image: url(/2024_12/img/thumb-3.jpg);
+  background-image: url(/public/2024_12/img/thumb-3.jpg);
 }
 
 .main-content-bg4 {
-  background-image: url(/2024_12/img/thumb-4.jpg);
+  background-image: url(/public/2024_12/img/thumb-4.jpg);
 }
 #footer_wrap {
   width: 100%;
@@ -245,7 +245,7 @@ body {
     background-position: center left;
   }
   .firstContainer {
-    background-image: url(/2024_12/img/common/klacc-title-mob.png);
+    background-image: url(/public/2024_12/img/common/klacc-title-mob.png);
     background-size: contain;
     background-position-y: calc(100% - 100px);
   }
