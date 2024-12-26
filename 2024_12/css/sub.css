@@ -111,6 +111,7 @@
   margin-bottom: 30px;
   color: white;
   font-weight: 300;
+  line-height: 2.2rem;
 }
 /* 기고자 */
 .content_writer {
@@ -583,6 +584,7 @@
   }
   .content_subtitle {
     font-size: 1.25rem;
+    line-height: 1.5rem;
   }
   .caption {
     font-size: 0.6rem;
@@ -623,6 +625,17 @@
 
 /* 반응형 모바일 */
 @media all and (max-width: 768px) {
+  .colored-box ul {
+    font-size: 0.8rem;
+    word-break: break-all;
+  }
+  .colored-box li {
+    display: flex;
+    flex-direction: column;
+  }
+  .colored-box b.text-color-theme {
+    font-size: 17px;
+  }
   .article-wrap {
     width: 100%;
     padding: 20px;
@@ -683,6 +696,7 @@
     margin-top: 10px;
     font-size: 1.2rem;
     line-height: 2rem;
+    padding: 0 20px;
   }
   .magazine-tool-btn {
     border-color: var(--color-theme);
@@ -800,14 +814,12 @@
   }
   .content_writer {
     padding: 0 20px;
+    font-size: 0.7rem;
   }
-  .content_title {
-    font-size: 1.5rem;
-    line-height: 2rem;
-    padding: 0 20px;
-  }
+
   .content_subtitle {
-    font-size: 1rem;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
   }
   .article-box p {
     width: 100%;
