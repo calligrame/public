@@ -36,7 +36,7 @@
   position: relative;
   width: 100px;
   height: 50px;
-  background-image: url(/2024_06/img/common/klacc-orig.png);
+  background-image: url(/2024_12/img/common/klacc-orig.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -48,7 +48,7 @@
 }
 
 .logo-white {
-  background-image: url(/2024_06/img/common/klacc-white.png);
+  background-image: url(/2024_12/img/common/klacc-white.png);
 }
 
 /* 메뉴 햄버거 버튼 */
