@@ -28,7 +28,7 @@ body {
 .firstContainer {
   height: 100vh;
   background-color: white;
-  background-image: url("/2025_06/img/common/klacc-title-img.png");
+  background-image: url("../img/common/klacc-title-img.png");
   padding: 100px 0;
   background-position: center left;
   background-size: 70%;
