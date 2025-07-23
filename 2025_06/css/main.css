@@ -95,18 +95,18 @@ body {
   height: 100%;
 }
 .main-content-bg1 {
-  background-image: url(/2025_06/img/thumb-1.jpg);
+  background-image: url(../img/thumb-1.jpg);
 }
 
 .main-content-bg2 {
-  background-image: url(/2025_06/img/thumb-2.jpg);
+  background-image: url(../img/thumb-2.jpg);
 }
 .main-content-bg3 {
-  background-image: url(/2025_06/img/thumb-3.jpg);
+  background-image: url(../img/thumb-3.jpg);
 }
 
 .main-content-bg4 {
-  background-image: url(/2025_06/img/thumb-4.jpg);
+  background-image: url(../img/thumb-4.jpg);
 }
 #footer_wrap {
   width: 100%;
