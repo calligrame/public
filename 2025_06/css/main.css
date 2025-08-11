@@ -237,6 +237,9 @@ body {
   .articles-section {
     flex-direction: column;
   }
+  .popup {
+    left: 10% !important;
+  }
   .title-side,
   .articles-list {
     width: 100%;
