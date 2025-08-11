@@ -60,7 +60,101 @@
   </head>
   <body>
     <header id="header"></header>
+    <div
+      id="divpop"
+      style="
+        position: fixed;
+        left: 35%;
+        top: 82px;
+        visibility: hidden;
+        z-index: 99999;
+      "
+    >
+      <form name="notice_form">
+        <div>
+          <a href="https://naver.me/F9hVq27e" target="_blank">
+            <img src="img/popup.jpg" width="420px" height="459px" alt="" />
+          </a>
+        </div>
+        <div class="poptxt">
+          <p>
+            <input
+              type="checkbox"
+              name="chkbox"
+              value=""
+              style="border: 0; vertical-align: middle"
+            />
+            <span>오늘 하루 이 창을 열지 않음</span>
+            <a id="closeWin">[닫기]</a>
+          </p>
+        </div>
+      </form>
+      <script language="Javascript">
+        cookiedata = document.cookie;
+        if (cookiedata.indexOf("maindiv=done") < 0) {
+          document.all["divpop"].style.visibility = "visible";
+        } else {
+          document.all["divpop"].style.visibility = "hidden";
+        }
+        document.getElementById("closeWin").onclick = function () {
+          document.all["divpop"].style.visibility = "hidden";
+          const now = new Date();
+          const tomorrow = new Date(now.getTime() + 24 * 60 * 60 * 1000); // 내일 같은 시간
+          const kstMidnight = new Date(tomorrow.setHours(0, 0, 0, 0)); // 내일 자정 (한국 시간)
+          kstMidnight.setHours(kstMidnight.getHours() - 9); // UTC로 변환
 
+          document.cookie = `maindiv=done; expires=${kstMidnight.toUTCString()}; path=/`;
+        };
+      </script>
+    </div>
+
+    <div
+      id="divNotice"
+      style="
+        position: fixed;
+        left: 60%;
+        top: 82px;
+        visibility: hidden;
+        z-index: 99999;
+      "
+    >
+      <form name="notice_form">
+        <div>
+          <a href="https://naver.me/F9hVq27e" target="_blank">
+            <img src="img/popup2.jpg" width="420px" height="459px" alt="" />
+          </a>
+        </div>
+        <div class="poptxt">
+          <p>
+            <input
+              type="checkbox"
+              name="chkbox"
+              value=""
+              style="border: 0; vertical-align: middle"
+            />
+            <span>오늘 하루 이 창을 열지 않음</span>
+            <a id="closeWin">[닫기]</a>
+          </p>
+        </div>
+      </form>
+      <script language="Javascript">
+        cookiedata = document.cookie;
+        if (cookiedata.indexOf("notice=done") < 0) {
+          document.all["divNotice"].style.visibility = "visible";
+        } else {
+          document.all["divNotice"].style.visibility = "hidden";
+        }
+        document.getElementById("closeWin").onclick = function () {
+          document.all["divNotice"].style.visibility = "hidden";
+          const now = new Date();
+          const tomorrow = new Date(now.getTime() + 24 * 60 * 60 * 1000); // 내일 같은 시간
+          const kstMidnight = new Date(tomorrow.setHours(0, 0, 0, 0)); // 내일 자정 (한국 시간)
+          kstMidnight.setHours(kstMidnight.getHours() - 9); // UTC로 변환
+
+          document.cookie = `notice=done; expires=${kstMidnight.toUTCString()}; path=/`;
+        };
+      </script>
+    </div>
     <div class="firstContainer">
       <div class="main-title-grid">
         <div class="empty"></div>
