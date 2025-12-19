@@ -20,15 +20,15 @@
       property="og:title"
       content="마음채움 Magazine | 강원랜드 마음채움센터"
     />
-    <meta property="og:image" content="/2025_06/img/thumb-1.jpg" />
+    <meta property="og:image" content="/2025_12/img/thumb-1.jpg" />
     <meta
       property="og:description"
       content="마음채움 Magazine | 강원랜드 마음채움센터"
     />
-    <meta property="og:url" content="/2025_06/index.html" />
+    <meta property="og:url" content="/2025_12/index.html" />
 
-    <link rel="stylesheet" href="2025_06/css/common.css" />
-    <link rel="stylesheet" href="2025_06/css/main.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/main.css" />
 
     <link rel="stylesheet" href="./style.css" />
 
@@ -49,13 +49,13 @@
     ></script>
     <script src="https://unpkg.com/@studio-freight/lenis@1.0.32/dist/lenis.min.js"></script>
 
-    <script defer src="2025_06/src/main.js"></script>
+    <script defer src="src/main.js"></script>
 
-    <script defer src="2025_06/src/main-gsap.js"></script>
+    <script defer src="src/main-gsap.js"></script>
     <!-- 팝업CSS -->
-    <link rel="stylesheet" href="2025_06/css/popup.css" />
+    <link rel="stylesheet" href="css/popup.css" />
     <!-- 팝업창 js -->
-    <script defer src="2025_06/src/popup.js"></script>
+    <script defer src="src/popup.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -73,13 +73,8 @@
     >
       <form name="notice_form">
         <div>
-          <a href="https://naver.me/F9hVq27e" target="_blank">
-            <img
-              src="2025_06/img/popup.jpg"
-              width="420px"
-              height="459px"
-              alt=""
-            />
+          <a href="https://naver.me/I5yVxcxX" target="_blank">
+            <img src="img/popup.jpg" width="420px" height="459px" alt="" />
           </a>
         </div>
         <div class="poptxt">
@@ -114,74 +109,14 @@
       </script>
     </div>
 
-    <div
-      id="divNotice"
-      class="popup"
-      style="
-        position: fixed;
-        left: 60%;
-        top: 82px;
-        visibility: hidden;
-        z-index: 99999;
-      "
-    >
-      <form name="notice_form">
-        <div>
-          <a
-            href="https://youtu.be/JhFIZwhl4r0?si=UUYmfEee26KsVEx8"
-            target="_blank"
-          >
-            <img
-              src="2025_06/img/popup2.jpg"
-              width="420px"
-              height="459px"
-              alt=""
-            />
-          </a>
-        </div>
-        <div class="poptxt">
-          <p>
-            <input
-              type="checkbox"
-              name="chkbox"
-              value=""
-              style="border: 0; vertical-align: middle"
-            />
-            <span></span>
-            <a id="closeWin">오늘 하루 이 창을 열지 않음 [닫기]</a>
-          </p>
-        </div>
-      </form>
-      <script language="Javascript">
-        cookiedata = document.cookie;
-        if (cookiedata.indexOf("notice=done") < 0) {
-          document.all["divNotice"].style.visibility = "visible";
-        } else {
-          document.all["divNotice"].style.visibility = "hidden";
-        }
-        document.getElementById("closeWin").onclick = function () {
-          document.all["divNotice"].style.visibility = "hidden";
-          const now = new Date();
-          const tomorrow = new Date(now.getTime() + 24 * 60 * 60 * 1000); // 내일 같은 시간
-          const kstMidnight = new Date(tomorrow.setHours(0, 0, 0, 0)); // 내일 자정 (한국 시간)
-          kstMidnight.setHours(kstMidnight.getHours() - 9); // UTC로 변환
-
-          document.cookie = `notice=done; expires=${kstMidnight.toUTCString()}; path=/`;
-        };
-      </script>
-    </div>
     <div class="firstContainer">
       <div class="main-title-grid">
         <div class="empty"></div>
         <div class="title-wrap">
-          <img class="vol-num" src="2025_06/img/common/vol61.png" alt="" />
-          <img
-            class="magazine-title"
-            src="2025_06/img/common/klacc-title.png"
-            alt=""
-          />
-          <p class="main-text-1 hidden">모든 감정을 품을 때</p>
-          <p class="main-text-2 hidden">비로소 행복해집니다</p>
+          <img class="vol-num" src="img/common/vol61.png" alt="" />
+          <img class="magazine-title" src="img/common/klacc-title.png" alt="" />
+          <p class="main-text-1 hidden">만드는 순간,</p>
+          <p class="main-text-2 hidden">나는 나를 되찾습니다</p>
           <p id="typing-1" class="main-text"></p>
           <p id="typing-2" class="main-text"></p>
         </div>
@@ -195,9 +130,9 @@
         <div class="content-title-wrap">
           <p class="main-content-category">Intro</p>
           <h2 class="content-title main-content-title">
-            모든 감정을 품을 때<br /><b>비로소 행복해집니다</b>
+            만드는 순간, <br /><b>나는 나를 되찾습니다</b>
           </h2>
-          <a class="content-button" href="2025_06/sub/sub1.html">바로가기</a>
+          <a class="content-button" href="sub/sub1.html">바로가기</a>
         </div>
         <div class="main-content-bg main-content-bg1 bg-x-center"></div>
       </div>
@@ -206,9 +141,11 @@
         <div class="content-title-wrap">
           <p class="main-content-category">테마인터뷰</p>
           <h2 class="content-title main-content-title">
-            박보검,<br /><b>‘군백기’ 후 발견한 푸르른 날들</b>
+            <b>임윤아, 대령숙수가 되다</b>
+            <br />“연기도 요리 닮아… <br />
+            같은 재료도 나만의 표현으로”
           </h2>
-          <a class="content-button" href="2025_06/sub/sub2.html">바로가기</a>
+          <a class="content-button" href="sub/sub2.html">바로가기</a>
         </div>
         <div class="main-content-bg bg-x-20 main-content-bg2"></div>
       </section>
@@ -216,10 +153,10 @@
         <div class="content-title-wrap">
           <p class="main-content-category">나에게 빠지다</p>
           <h2 class="content-title main-content-title">
-            내 감정에 귀 기울이는 연습
-            <br /><b> 감정일기와 ‘마음챙김 명상’</b>
+            흔들림 없는 평정심을 찾아서
+            <br /><b> 마운틴 명상</b>
           </h2>
-          <a class="content-button" href="2025_06/sub/sub3.html">바로가기</a>
+          <a class="content-button" href="sub/sub3.html">바로가기</a>
         </div>
         <div class="main-content-bg main-content-bg3 bg-x-center"></div>
       </section>
@@ -227,11 +164,12 @@
         <div class="content-title-wrap">
           <p class="main-content-category">테마 스페셜</p>
           <h2 class="content-title main-content-title">
-            피하지 말고, 숨지도 말고 우리를<b
-              ><br />앞으로 나아가게 하는 인생의 도구들</b
+            주저하지 않는 시작, 세상을 움직이다<b
+              ><br />변화를 만드는 집념, <br />
+              그리고 성장의 시작</b
             >
           </h2>
-          <a class="content-button" href="2025_06/sub/sub4.html">바로가기</a>
+          <a class="content-button" href="sub/sub4.html">바로가기</a>
         </div>
         <div class="main-content-bg main-content-bg4"></div>
       </section>
@@ -247,54 +185,56 @@
         <div class="articles-list">
           <div class="list-wrap">
             <div class="article-item">
-              <a href="2025_06/sub/sub5.html">
-                <img src="2025_06/img/thumb-5.jpg" alt="" />
+              <a href="sub/sub5.html">
+                <img src="img/thumb-5.jpg" alt="" />
                 <h6 class="item-cate">인포그래픽</h6>
-                <h4 class="item-title">“항상 행복해야 해?” 독성 긍정의 덫</h4>
+                <h4 class="item-title">
+                  소비자를 넘어 창작자로, 하비슈머 시대의 도래
+                </h4>
               </a>
             </div>
 
             <div class="article-item">
-              <a href="2025_06/sub/sub6.html">
-                <img src="2025_06/img/thumb-6.jpg" alt="" />
+              <a href="sub/sub6.html">
+                <img src="img/thumb-6.jpg" alt="" />
                 <h6 class="item-cate">세상에 빠지다</h6>
                 <h4 class="item-title">
-                  웃음 뒤에 숨은 그림자, <br />
-                  한국 사회의 감정 억압 문화를 파헤치다
+                  돈으로 스트레스를 푸는 당신, 혹시 쇼핑중독?
                 </h4>
               </a>
             </div>
             <div class="article-item">
-              <a href="2025_06/sub/sub7.html">
-                <img src="2025_06/img/thumb-7.jpg" alt="" />
+              <a href="sub/sub7.html">
+                <img src="img/thumb-7.jpg" alt="" />
                 <h6 class="item-cate">지금 해외는</h6>
-                <h4 class="item-title">세계는 지금 ‘감정 균형’을 찾는 중</h4></a
-              >
-            </div>
-            <div class="article-item">
-              <a href="2025_06/sub/sub8.html">
-                <img src="2025_06/img/thumb-8.jpg" alt="" />
-                <h6 class="item-cate">한 걸음씩 밖으로</h6>
                 <h4 class="item-title">
-                  잠시 돌아보며 진짜 감정에 이름짓기
+                  일상에서 찾은 회복의 길… <br />
+                  日 모노즈쿠리, 중독 치료 수단 ‘눈길’
                 </h4></a
               >
             </div>
             <div class="article-item">
-              <a href="2025_06/sub/sub9.html">
-                <img src="2025_06/img/thumb-9.jpg" alt="" />
+              <a href="sub/sub8.html">
+                <img src="img/thumb-8.jpg" alt="" />
+                <h6 class="item-cate">한 걸음씩 밖으로</h6>
+                <h4 class="item-title">내 손으로 나의 삶을 짓다</h4></a
+              >
+            </div>
+            <div class="article-item">
+              <a href="sub/sub9.html">
+                <img src="img/thumb-9.jpg" alt="" />
                 <h6 class="item-cate">KLACC을 잇다</h6>
                 <h4 class="item-title">
-                  강원랜드 제1회 중독예방 포럼, <br />
-                  첨단기술로 열어가는 예방의 새 지평
+                  제79차 한국심리학회 연차학술대회’서 <br />
+                  도박중독 예방 특별 심포지엄 개최
                 </h4>
               </a>
             </div>
             <div class="article-item">
-              <a href="2025_06/sub/sub10.html">
-                <img src="2025_06/img/thumb-10.jpg" alt="" />
+              <a href="sub/sub10.html">
+                <img src="img/thumb-10.jpg" alt="" />
                 <h6 class="item-cate">마음을 읽다</h6>
-                <h4 class="item-title">혹시 나도 긍정 중독?</h4>
+                <h4 class="item-title">오늘, 당신의 마음은 맑음인가요?</h4>
               </a>
             </div>
           </div>
@@ -307,36 +247,36 @@
         <div class="articles-list">
           <div class="list-wrap">
             <div class="article-item">
-              <a href="2025_06/sub/sub11.html">
-                <img src="2025_06/img/thumb-11.jpg" alt="" />
+              <a href="sub/sub11.html">
+                <img src="img/thumb-11.jpg" alt="" />
                 <h6 class="item-cate">리부트</h6>
                 <h4 class="item-title">
-                  아내의 사랑으로 되찾은 두 번째 인생의 행복
+                  잃어버린 ‘나’를 찾아, 나를 사랑하게 되기까지
                 </h4>
               </a>
             </div>
             <div class="article-item">
-              <a href="2025_06/sub/sub12.html">
-                <img src="2025_06/img/thumb-12.jpg" alt="" />
+              <a href="sub/sub12.html">
+                <img src="img/thumb-12.jpg" alt="" />
                 <h6 class="item-cate">함께 떠나요</h6>
                 <h4 class="item-title">
-                  자기만의 청령포에 갇혀 있던 삶, <br />
-                  그 섬을 빠져나온 이들의 영월 기행
+                  출렁다리 위, 오랜 세월의 아쉬움을 넘어 <br />
+                  새로운 발걸음을 딛는 극복의 기쁨
                 </h4>
               </a>
             </div>
             <div class="article-item">
-              <a href="2025_06/sub/sub13.html">
-                <img src="2025_06/img/thumb-13.jpg" alt="" />
+              <a href="sub/sub13.html">
+                <img src="img/thumb-13.jpg" alt="" />
                 <h6 class="item-cate">여행 가서 뭐 먹지?</h6>
-                <h4 class="item-title">영월 가서 뭐 먹지?</h4>
+                <h4 class="item-title">제천 가서 뭐 먹지?</h4>
               </a>
             </div>
             <div class="article-item">
-              <a href="2025_06/sub/sub14.html">
-                <img src="2025_06/img/thumb-14.jpg" alt="" />
+              <a href="sub/sub14.html">
+                <img src="img/thumb-14.jpg" alt="" />
                 <h6 class="item-cate">인생수업</h6>
-                <h4 class="item-title">감정적 용기가 주는 선물과 힘</h4>
+                <h4 class="item-title">마음이 죽어가는 사람을 살리는 공감법</h4>
               </a>
             </div>
           </div>
@@ -349,31 +289,30 @@
         <div class="articles-list">
           <div class="list-wrap">
             <div class="article-item">
-              <a href="2025_06/sub/sub15.html">
-                <img src="2025_06/img/thumb-15.jpg" alt="" />
+              <a href="sub/sub15.html">
+                <img src="img/thumb-15.jpg" alt="" />
                 <h6 class="item-cate">취향의 발견</h6>
-                <h4 class="item-title">
-                  천천히 치대고 기다리며 마음을 달래는 <br />사워도우
-                </h4>
+                <h4 class="item-title">오래된 옷 새로운 쓰임</h4>
+              </a>
+            </div>
+
+            <div class="article-item">
+              <a href="sub/sub16.html">
+                <img src="img/thumb-17.jpg" alt="" />
+                <h6 class="item-cate">쉼이 있는 풍경</h6>
+                <h4 class="item-title">하늘고기 - 전윤호</h4>
               </a>
             </div>
             <div class="article-item">
-              <a href="2025_06/sub/sub16.html">
-                <img src="2025_06/img/thumb-16.jpg" alt="" />
+              <a href="sub/sub17.html">
+                <img src="img/thumb-16.jpg" alt="" />
                 <h6 class="item-cate">KLACC NEWS</h6>
                 <h4 class="item-title">KLACC NEWS</h4>
               </a>
             </div>
             <div class="article-item">
-              <a href="2025_06/sub/sub17.html">
-                <img src="2025_06/img/thumb-17.jpg" alt="" />
-                <h6 class="item-cate">쉼이 있는 풍경</h6>
-                <h4 class="item-title">소나무 - 전윤호</h4>
-              </a>
-            </div>
-            <div class="article-item">
-              <a href="2025_06/sub/sub18.html">
-                <img src="2025_06/img/thumb-18.jpg" alt="" />
+              <a href="sub/sub18.html">
+                <img src="img/thumb-18.jpg" alt="" />
                 <h6 class="item-cate">독자참여</h6>
                 <h4 class="item-title">마음채움 독자참여</h4>
               </a>
@@ -385,7 +324,7 @@
       <footer id="footer_wrap">
         <div class="footer-logo" style="width: 100px">
           <img
-            src="2025_06/img/common/klacc-orig.png"
+            src="img/common/klacc-orig.png"
             alt="강원랜드 마음채움센터 로고"
           />
         </div>
@@ -400,6 +339,9 @@
             onchange="if(this.value) location.href=(this.value);"
           >
             <option value="">지난호 보기</option>
+            <option value="http://www.klaccmagazine.co.kr/2025_06/index.html">
+              2025년 상반기호
+            </option>
             <option value="http://www.klaccmagazine.co.kr/2024_12/index.html">
               2024년 하반기호
             </option>

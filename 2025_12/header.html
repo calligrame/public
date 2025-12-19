@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <link rel="stylesheet" href="css/nav.css" />
+  </head>
+  <body>
+    <div id="header-left">
+      <a href="https://calligrame.github.io/public/2025_12/index.html">
+        <div id="klacc-logo" class="logo"></div>
+      </a>
+    </div>
+    <div id="header-right">
+      <div id="btn_nav" class="cate-item">
+        <button
+          class="menu"
+          onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+          aria-label="Main Menu"
+        >
+          <svg width="50 " height="50" viewBox="0 0 100 100">
+            <path
+              class="line line1"
+              d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+            />
+            <path class="line line2" d="M 20,50 H 80" />
+            <path
+              class="line line3"
+              d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <div id="btn_mob_nav" class="cate-item">
+        <button
+          class="menu"
+          onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+          aria-label="Main Menu"
+        >
+          <svg width="50 " height="50" viewBox="0 0 100 100">
+            <path
+              class="line line1"
+              d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+            />
+            <path class="line line2" d="M 20,50 H 80" />
+            <path
+              class="line line3"
+              d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- pc버전 풀페이지 메뉴 -->
+    <div id="full-nav">
+      <ul id="nav-cate-wrap">
+        <li class="nav-cate" id="cate-message">
+          <div class="message-top">
+            <h3 class="cate-title">Theme</h3>
+            <ul class="nav-item-wrap">
+              <li class="nav-item">
+                <a
+                  href="https://calligrame.github.io/public/2025_12/sub/sub1.html"
+                >
+                  <h6 class="nav-item-seg">Intro</h6>
+                  <h4 class="nav-item-title">
+                    만드는 순간, <br />
+                    나는 나를 되찾습니다
+                  </h4>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="https://calligrame.github.io/public/2025_12/sub/sub2.html"
+                >
+                  <h6 class="nav-item-seg">테마 인터뷰</h6>
+                  <h4 class="nav-item-title">
+                    임윤아, 대령숙수가 되다 <br />
+                    “연기도 요리 닮아… 같은 재료도 나만의 표현으로”
+                  </h4>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="https://calligrame.github.io/public/2025_12/sub/sub3.html"
+                >
+                  <h6 class="nav-item-seg">나에게 빠지다</h6>
+                  <h4 style="letter-spacing: -0.01em" class="nav-item-title">
+                    흔들림 없는 평정심을 찾아서 <br />
+                    마운틴 명상
+                  </h4>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="https://calligrame.github.io/public/2025_12/sub/sub4.html"
+                >
+                  <h6 class="nav-item-seg">테마 스페셜</h6>
+                  <h4 class="nav-item-title">
+                    주저하지 않는 시작, 세상을 움직이다 <br />
+                    변화를 만드는 집념, 그리고 성장의 시작
+                  </h4>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-cate">
+          <h3 class="cate-title">Insight</h3>
+          <ul class="nav-item-wrap">
+            <li class="nav-item">
+              <a
+                href="https://calligrame.github.io/public/2025_12/sub/sub5.html"
+              >
+                <h6 class="nav-item-seg">인포그래픽</h6>
+                <h4 class="nav-item-title">
+                  소비자를 넘어 창작자로, <br />하비슈머 시대의 도래
+                </h4>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                href="https://calligrame.github.io/public/2025_12/sub/sub6.html"
+              >
+                <h6 class="nav-item-seg">세상에 빠지다</h6>
+                <h4 class="nav-item-title">
+                  돈으로 스트레스를 푸는 당신, <br />
+                  혹시 쇼핑중독?
+                </h4>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="https://calligrame.github.io/public/2025_12/sub/sub7.html"
+              >
+                <h6 class="nav-item-seg">지금 해외는</h6>
+                <h4 class="nav-item-title">
+                  일상에서 찾은 회복의 길… <br />日 모노즈쿠리, 중독 치료 수단
+                  ‘눈길’
+                </h4>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="https://calligrame.github.io/public/2025_12/sub/sub8.html"
+              >
+                <h6 class="nav-item-seg">한 걸음씩 밖으로</h6>
+                <h4 class="nav-item-title">내 손으로 나의 삶을 짓다</h4>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="https://calligrame.github.io/public/2025_12/sub/sub9.html"
+              >
+                <h6 class="nav-item-seg">KLACC을 잇다</h6>
+                <h4 class="nav-item-title">
+                  제79차 한국심리학회 연차학술대회’서
+                  <br />
+                  도박중독 예방 특별 심포지엄 개최
+                </h4>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="https://calligrame.github.io/public/2025_12/sub/sub10.html"
+              >
+                <h6 class="nav-item-seg">마음을 읽다</h6>
+                <h4 class="nav-item-title">오늘, 당신의 마음은 맑음인가요?</h4>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-cate">
+          <h3 class="cate-title">People</h3>
+          <ul class="nav-item-wrap">
+            <li class="nav-item">
+              <a
+                href="https://calligrame.github.io/public/2025_12/sub/sub11.html"
+              >
+                <h6 class="nav-item-seg">리부트</h6>
+                <h4 class="nav-item-title">
+                  잃어버린 ‘나’를 찾아, 나를 사랑하게 되기까지
+                </h4>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="https://calligrame.github.io/public/2025_12/sub/sub12.html"
+              >
+                <h6 class="nav-item-seg">함께 떠나요</h6>
+                <h4 class="nav-item-title">제천 옥순봉 출렁다리</h4>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="https://calligrame.github.io/public/2025_12/sub/sub13.html"
+              >
+                <h6 class="nav-item-seg">여행 가서 뭐 먹지?</h6>
+                <h4 class="nav-item-title">제천 가서 뭐 먹지?</h4>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="https://calligrame.github.io/public/2025_12/sub/sub14.html"
+              >
+                <h6 class="nav-item-seg">인생수업</h6>
+                <h4 class="nav-item-title">
+                  마음이 죽어가는 사람을 살리는 공감법 <br />
+                  _정혜신
+                </h4>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-cate">
+          <h3 class="cate-title">Community</h3>
+          <ul class="nav-item-wrap">
+            <li class="nav-item">
+              <a
+                href="https://calligrame.github.io/public/2025_12/sub/sub15.html"
+              >
+                <h6 class="nav-item-seg">취향의 발견</h6>
+                <h4 class="nav-item-title">오래된 옷 새로운 쓰임</h4>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="https://calligrame.github.io/public/2025_12/sub/sub16.html"
+              >
+                <h6 class="nav-item-seg">쉼이 있는 풍경</h6>
+                <h4 class="nav-item-title">하늘고기 - 전윤호</h4>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="https://calligrame.github.io/public/2025_12/sub/sub17.html"
+              >
+                <h6 class="nav-item-seg">KLACC NEWS</h6>
+                <h4 class="nav-item-title">KLACC NEWS</h4>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                href="https://calligrame.github.io/public/2025_12/sub/sub18.html"
+              >
+                <h6 class="nav-item-seg">독자참여</h6>
+                <h4 class="nav-item-title">마음채움 독자참여</h4>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 모바일 버전 풀페이지 메뉴 -->
+    <div id="mobile-full-nav">
+      <div id="nav-tabs-wrap">
+        <div class="tab">
+          <input type="checkbox" name="rd" id="rd1" /><label
+            for="rd1"
+            class="tab-label"
+            >Theme</label
+          >
+          <ul class="tab-content-wrap">
+            <li class="content-item">
+              <a
+                href="https://calligrame.github.io/public/2025_12/sub/sub1.html"
+              >
+                <h6 class="nav-item-seg">Intro</h6>
+                <h4 class="nav-item-title">
+                  만드는 순간, <br />
+                  나는 나를 되찾습니다
+                </h4>
+              </a>
+            </li>
+            <li class="content-item">
+              <a
+                href="https://calligrame.github.io/public/2025_12/sub/sub2.html"
+              >
+                <h6 class="nav-item-seg">테마 인터뷰</h6>
+                <h4 class="nav-item-title">
+                  임윤아, 대령숙수가 되다 <br />
+                  “연기도 요리 닮아… 같은 재료도 나만의 표현으로”
+                </h4>
+              </a>
+            </li>
+            <li class="content-item">
+              <a
+                href="https://calligrame.github.io/public/2025_12/sub/sub3.html"
+              >
+                <h6 class="nav-item-seg">나에게 빠지다</h6>
+                <h4 class="nav-item-title">
+                  흔들림 없는 평정심을 찾아서 <br />
+                  마운틴 명상
+                </h4>
+              </a>
+            </li>
+            <li class="content-item">
+              <a
+                href="https://calligrame.github.io/public/2025_12/sub/sub4.html"
+              >
+                <h6 class="nav-item-seg">테마 스페셜</h6>
+                <h4 class="nav-item-title">
+                  주저하지 않는 시작, 세상을 움직이다 <br />
+                  변화를 만드는 집념, 그리고 성장의 시작
+                </h4>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="tab">
+          <input type="checkbox" name="rd" id="rd2" /><label
+            for="rd2"
+            class="tab-label"
+            >Insight</label
+          >
+
+          <ul class="tab-content-wrap">
+            <li class="content-item">
+              <a
+                href="https://calligrame.github.io/public/2025_12/sub/sub5.html"
+              >
+                <h6 class="nav-item-seg">인포그래픽</h6>
+                <h4 class="nav-item-title">
+                  소비자를 넘어 창작자로, <br />하비슈머 시대의 도래
+                </h4>
+              </a>
+            </li>
+            <li class="content-item">
+              <a
+                href="https://calligrame.github.io/public/2025_12/sub/sub6.html"
+              >
+                <h6 class="nav-item-seg">세상에 빠지다</h6>
+                <h4 class="nav-item-title">
+                  돈으로 스트레스를 푸는 당신, <br />
+                  혹시 쇼핑중독?
+                </h4>
+              </a>
+            </li>
+            <li class="content-item">
+              <a
+                href="https://calligrame.github.io/public/2025_12/sub/sub7.html"
+              >
+                <h6 class="nav-item-seg">지금 해외는</h6>
+                <h4 class="nav-item-title">
+                  일상에서 찾은 회복의 길… <br />日 모노즈쿠리, 중독 치료 수단
+                  ‘눈길’
+                </h4>
+              </a>
+            </li>
+            <li class="content-item">
+              <a
+                href="https://calligrame.github.io/public/2025_12/sub/sub8.html"
+              >
+                <h6 class="nav-item-seg">한 걸음씩 밖으로</h6>
+                <h4 class="nav-item-title">내 손으로 나의 삶을 짓다</h4>
+              </a>
+            </li>
+            <li class="content-item">
+              <a
+                href="https://calligrame.github.io/public/2025_12/sub/sub9.html"
+              >
+                <h6 class="nav-item-seg">KLACC을 잇다</h6>
+                <h4 class="nav-item-title">
+                  제79차 한국심리학회 연차학술대회’서
+                  <br />
+                  도박중독 예방 특별 심포지엄 개최
+                </h4>
+              </a>
+            </li>
+            <li class="content-item">
+              <a
+                href="https://calligrame.github.io/public/2025_12/sub/sub10.html"
+              >
+                <h6 class="nav-item-seg">마음을 읽다</h6>
+                <h4 class="nav-item-title">오늘, 당신의 마음은 맑음인가요?</h4>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="tab">
+          <input type="checkbox" name="rd" id="rd3" /><label
+            for="rd3"
+            class="tab-label"
+            >People</label
+          >
+          <ul class="tab-content-wrap">
+            <li class="content-item">
+              <a
+                href="https://calligrame.github.io/public/2025_12/sub/sub11.html"
+              >
+                <h6 class="nav-item-seg">리부트</h6>
+                <h4 class="nav-item-title">
+                  잃어버린 ‘나’를 찾아, 나를 사랑하게 되기까지
+                </h4>
+              </a>
+            </li>
+            <li class="content-item">
+              <a
+                href="https://calligrame.github.io/public/2025_12/sub/sub12.html"
+              >
+                <h6 class="nav-item-seg">함께 떠나요</h6>
+                <h4 class="nav-item-title">제천 옥순봉 출렁다리</h4>
+              </a>
+            </li>
+            <li class="content-item">
+              <a
+                href="https://calligrame.github.io/public/2025_12/sub/sub13.html"
+              >
+                <h6 class="nav-item-seg">여행 가서 뭐 먹지?</h6>
+                <h4 class="nav-item-title">제천 가서 뭐 먹지?</h4>
+              </a>
+            </li>
+            <li class="content-item">
+              <a
+                href="https://calligrame.github.io/public/2025_12/sub/sub14.html"
+              >
+                <h6 class="nav-item-seg">인생수업</h6>
+                <h4 class="nav-item-title">
+                  마음이 죽어가는 사람을 살리는 공감법 <br />
+                  _정혜신
+                </h4>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="tab">
+          <input type="checkbox" name="rd" id="rd4" /><label
+            for="rd4"
+            class="tab-label"
+            >Community</label
+          >
+          <ul class="tab-content-wrap">
+            <li class="content-item">
+              <a
+                href="https://calligrame.github.io/public/2025_12/sub/sub15.html"
+              >
+                <h6 class="nav-item-seg">취향의 발견</h6>
+                <h4 class="nav-item-title">오래된 옷 새로운 쓰임</h4>
+              </a>
+            </li>
+            <li class="content-item">
+              <a
+                href="https://calligrame.github.io/public/2025_12/sub/sub16.html"
+              >
+                <h6 class="nav-item-seg">쉼이 있는 풍경</h6>
+                <h4 class="nav-item-title">하늘고기 - 전윤호</h4>
+              </a>
+            </li>
+            <li class="content-item">
+              <a
+                href="https://calligrame.github.io/public/2025_12/sub/sub17.html"
+              >
+                <h6 class="nav-item-seg">KLACC NEWS</h6>
+                <h4 class="nav-item-title">KLACC NEWS</h4>
+              </a>
+            </li>
+
+            <li class="content-item">
+              <a
+                href="https://calligrame.github.io/public/2025_12/sub/sub18.html"
+              >
+                <h6 class="nav-item-seg">독자참여</h6>
+                <h4 class="nav-item-title">마음채움 독자참여</h4>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- <div class="tab">
+          <a href="/2025_12/magazine_list.html" class="tab-btn-magazine-list"
+            >지난호보기</a
+          >
+        </div> -->
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        $.support.cors = true;
+
+        $("#btn_nav").on("click", function () {
+          $("#nav-icon4").toggleClass("open");
+          $("#full-nav").toggleClass("active");
+        });
+        $("#btn_mob_nav").on("click", function () {
+          $("#nav-icon4").toggleClass("open");
+          $("#mobile-full-nav").toggleClass("active");
+          $("#header").toggleClass("white");
+        });
+      });
+    </script>
+  </body>
+</html>
