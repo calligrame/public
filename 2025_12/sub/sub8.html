@@ -45,14 +45,21 @@
     ></script>
     <script defer src="../src/sub.js"></script>
     <link rel="stylesheet" href="../css/sub.css" />
+    <style>
+      .header-wrap.pannel {
+        background-image: url(../img/sub8/bg.jpg) !important;
+      }
+      @media (max-width: 768px) {
+        .header-wrap.pannel {
+          background-position: left center;
+        }
+      }
+    </style>
   </head>
   <body>
     <header id="header"></header>
 
-    <div
-      class="header-wrap pannel"
-      style="background-image: url(../img/sub8/bg.jpg)"
-    >
+    <div class="header-wrap pannel">
       <h3 class="column">한 걸음씩 밖으로</h3>
 
       <h1 class="content_title">내 손으로 나의 삶을 짓다</h1>
