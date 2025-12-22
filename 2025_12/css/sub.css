@@ -154,7 +154,7 @@
 }
 .sub-title-tag {
   display: inline-block;
-  background-color: var(--color-theme);
+  background-color: #9e3d00;
   color: white;
   font-size: 1rem;
   line-height: 0.2rem;
@@ -577,6 +577,9 @@
 }
 
 /* 한걸음씩 밖으로 */
+.card-title {
+  color: #231815;
+}
 .card-grid-container {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
